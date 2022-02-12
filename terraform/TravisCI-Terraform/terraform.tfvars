@@ -1,0 +1,11 @@
+resource_group_name = ["data-center1","data-center2", "tfstate"]
+location = ["eastus","centralus"]
+vnet_cidr_range =   "10.0.0.0/16"
+vnet_cidr_range_2 = "10.2.0.0/16"
+vnet_cidr_range_3 = "10.3.0.0/16"
+subnet_prefixes =   ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+subnet_prefixes_2 = ["10.2.1.0/24", "10.2.2.0/24", "10.2.3.0/24"]
+subnet_prefixes_3 = ["10.3.1.0/24", "10.3.2.0/24", "10.3.3.0/24"]
+subnet_names = ["web","app","database"]
+vnet_cidr_range2 = "10.1.0.0/16"
+subnet_prefixes2 = ["10.1.1.0/24", "10.1.2.0/24", "10.1.3.0/24"]
