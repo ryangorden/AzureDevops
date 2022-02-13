@@ -65,7 +65,7 @@ jobs:
         # Download and install terraform before each run
         - sudo apt install -y unzip
         - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-        - unzip -qq terraform_"$tf_version"_linux_amd64.zip && /bin/echo n
+        - /bin/echo n && unzip -qq terraform_"$tf_version"_linux_amd64.zip
         - rm terraform_"$tf_version"_linux_amd64.zip
 
       script:
