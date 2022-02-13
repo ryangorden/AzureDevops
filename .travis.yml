@@ -64,9 +64,11 @@ jobs:
       install:
         # Download and install terraform before each run
         - sudo apt install -y unzip
-        - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-        - /bin/echo n && unzip -qq terraform_"$tf_version"_linux_amd64.zip
-        - rm terraform_"$tf_version"_linux_amd64.zip
+        # - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
+        - wget https://drive.google.com/file/d/1GD_imScAZh-_UpBuIcx__8wXH71mBNU8/view?usp=sharing
+        - sudo mv terraform /usr/local/bin/
+        # - /bin/echo n && unzip -qq terraform_"$tf_version"_linux_amd64.zip
+        # - rm terraform_"$tf_version"_linux_amd64.zip
 
       script:
         - echo "Merge detected, executing changes"
